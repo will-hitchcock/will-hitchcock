@@ -1,0 +1,21 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": ["react"],
+    "env": {
+      "browser": true,
+      "jest": true,
+      "es6": true,
+      "node": true
+    },
+    "globals": {
+      "describe": true,
+      "before": true,
+      "it": true,
+      "expect": true
+    },
+    "rules": {
+      "semi": ["error", "never"],
+      "arrow-parens": ["error", "always"]
+    }
+}

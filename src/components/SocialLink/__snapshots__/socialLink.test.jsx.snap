@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialLink renders a github <SocialLink />, color #000000, size 128 1`] = `
+<a
+  href="https://www.linkedin.com/in/willhitchcock"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <Icon
+    color="#000000"
+    name="twitter"
+    size={64}
+  />
+</a>
+`;
+
+exports[`SocialLink renders a linkedin <SocialLink />, color #0077B5, size 32 1`] = `
+<a
+  href="https://www.linkedin.com/in/willhitchcock"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <Icon
+    color="#0077B5"
+    name="linkedin"
+    size={64}
+  />
+</a>
+`;
+
+exports[`SocialLink renders a twitter <SocialLink />, color #1DA1F2, size 64 1`] = `
+<a
+  href="https://www.linkedin.com/in/willhitchcock"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <Icon
+    color="#1DA1F2"
+    name="twitter"
+    size={64}
+  />
+</a>
+`;

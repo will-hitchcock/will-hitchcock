@@ -1,0 +1,71 @@
+{
+  "name": "gatsby-example-using-contentful",
+  "private": true,
+  "description": "Gatsby example site using the Contentful source plugin",
+  "version": "1.0.0",
+  "author": "Marcus Ericsson <mericsson@gmail.com> (mericsson.com)",
+  "dependencies": {
+    "@storybook/addon-actions": "^4.0.2",
+    "@storybook/addon-links": "^4.0.2",
+    "@storybook/addons": "^4.0.2",
+    "@storybook/react": "^4.0.2",
+    "dotenv": "^6.1.0",
+    "gatsby": "^2.0.0",
+    "gatsby-image": "^2.0.5",
+    "gatsby-plugin-google-analytics": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-source-contentful": "^2.0.1",
+    "gatsby-transformer-remark": "^2.1.1",
+    "lodash": "^4.17.10",
+    "prop-types": "^15.6.2",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.2.2",
+    "react-icons-kit": "^1.2.0",
+    "react-typography": "^0.16.3",
+    "slash": "^2.0.0",
+    "styled-components": "^4.0.3"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "resolutions": {
+    "contentful": "6.1.0"
+  },
+  "lint-staged": {
+    "*.js": "lint:eslint"
+  },
+  "pre-commit": "lint:staged",
+  "scripts": {
+    "dev": "gatsby develop",
+    "debug": "node --inspect-brk --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
+    "build": "gatsby build",
+    "start": "gatsby serve",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "lint": "npm run lint:js",
+    "lint:eslint": "eslint --ignore-path .gitignore",
+    "lint:js": "npm run lint:eslint -- . ",
+    "lint:staged": "lint-staged",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.6.0"
+  }
+}

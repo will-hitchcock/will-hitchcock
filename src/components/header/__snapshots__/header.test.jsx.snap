@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render a <Header /> 1`] = `
+<styled.div>
+  <styled.h1
+    style={
+      Object {
+        "margin": 0,
+      }
+    }
+  >
+    Test title!
+  </styled.h1>
+</styled.div>
+`;
