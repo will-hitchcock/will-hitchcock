@@ -6,7 +6,8 @@ import { twitter } from 'react-icons-kit/fa/twitter'
 import { github } from 'react-icons-kit/fa/github'
 import styled from 'styled-components'
 
-const Container = styled.span`
+const Container = styled.div`
+  display: inline-flex;
   color: ${(props) => props.color}
 `
 

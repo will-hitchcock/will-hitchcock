@@ -1,11 +1,16 @@
 import React from 'react'
 import { string } from 'prop-types'
+import styled from 'styled-components'
 import Icon from '../Icon'
+import { babyBlueEyes } from '../Foundations/colors'
 
+const A = styled.a`
+  display: inline-flex;
+`
 const SocialLink = ({ icon, url, color }) => (
-  <a href={url} target="_blank" rel="noopener noreferrer">
+  <A href={url} target="_blank" rel="noopener noreferrer">
     <Icon name={icon} color={color} size={64} />
-  </a>
+  </A>
 )
 
 SocialLink.propTypes = {
@@ -16,7 +21,7 @@ SocialLink.propTypes = {
 
 SocialLink.defaultProps = {
   // TODO: update to primary color
-  color: '#000000',
+  color: babyBlueEyes,
 }
 
 export default SocialLink

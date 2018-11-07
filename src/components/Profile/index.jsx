@@ -1,13 +1,18 @@
 import React from 'react'
 import { string, arrayOf, shape } from 'prop-types'
 import styled from 'styled-components'
-import SocialLink from '../SocialLink'
+import SocialLinkList from '../SocialLink/list'
+import Button from '../Button'
+import Row from '../Foundations/row'
+import { H1, P } from '../Foundations/typography'
 
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background:
-    /* top, transparent red, faked with gradient */
     linear-gradient(
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
@@ -17,8 +22,9 @@ const Container = styled.div`
   color: #C9CED6;
 `
 
-const H1 = styled.h1`
-
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
 `
 
 const Profile = ({
@@ -26,13 +32,18 @@ const Profile = ({
   blurb,
   socialLinks,
   heroImage,
+  resume,
 }) => (
   <Container background={heroImage}>
-    <H1>{header}</H1>
-    <p>{blurb}</p>
-    {socialLinks.map(({ icon, url }) => (
-      <SocialLink key={icon} icon={icon} url={url} color="#C9CED6" />
-    ))}
+    <Content>
+      <H1 inverted>{header}</H1>
+      <P inverted>{blurb}</P>
+      <Row>
+        <Button inverted text="Paper Resume" url={resume} external />
+        <Button inverted text="Digital Resume" url="/resume" />
+      </Row>
+      <SocialLinkList socialLinks={socialLinks} />
+    </Content>
   </Container>
 )
 
@@ -44,6 +55,7 @@ Profile.propTypes = {
     url: string.isRequired,
   })).isRequired,
   heroImage: string.isRequired,
+  resume: string.isRequired,
 }
 
 export default Profile

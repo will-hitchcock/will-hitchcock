@@ -1,0 +1,6 @@
+export const babyBlueEyes = 'rgba(163, 206, 241, 1)'
+export const glitter = 'rgba(231, 236, 239, 1)'
+export const silverLateBlue = 'rgba(96, 150, 186, 1)'
+export const stPatricksBlue = 'rgba(39, 76, 119, 1)'
+export const taupeGrey = 'rgba(139, 140, 137, 1)'
+export const black = 'rgba(0, 0, 0, 1)'
