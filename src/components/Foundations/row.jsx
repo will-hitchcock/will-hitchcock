@@ -1,17 +1,10 @@
 import styled from 'styled-components'
-import margin from './margin'
 
 const Row = styled.div`
-  ${margin}
+  margin: -8px -8px 8px -8px;
   flex-direction: row;
   > * {
-    margin: 0 8px;
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
+    margin: 8px;
   }
 `
 

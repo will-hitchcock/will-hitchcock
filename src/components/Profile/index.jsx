@@ -4,7 +4,9 @@ import styled from 'styled-components'
 import SocialLinkList from '../SocialLink/list'
 import Button from '../Button'
 import Row from '../Foundations/row'
-import { H1, P } from '../Foundations/typography'
+import units from '../Foundations/units'
+import Header from '../Typography/Header'
+import Paragraph from '../Typography/Paragraph'
 
 const Container = styled.div`
   height: 100vh;
@@ -25,6 +27,8 @@ const Container = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: ${units(160)};
+  padding: ${units(9)};
 `
 
 const Profile = ({
@@ -36,8 +40,8 @@ const Profile = ({
 }) => (
   <Container background={heroImage}>
     <Content>
-      <H1 inverted>{header}</H1>
-      <P inverted>{blurb}</P>
+      <Header size="large" inverted>{header}</Header>
+      <Paragraph inverted>{blurb}</Paragraph>
       <Row>
         <Button inverted text="Paper Resume" url={resume} external />
         <Button inverted text="Digital Resume" url="/resume" />

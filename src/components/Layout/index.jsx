@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-// import Header from '../header'
-import GlobalStyles from './globalStyles'
 
 const query = graphql`
   query SiteTitleQuery {
@@ -30,8 +28,6 @@ const Layout = ({ children }) => (
         <Helmet title={title}>
           <html lang="en" />
         </Helmet>
-        <GlobalStyles />
-        {/* <Header siteTitle={title} /> */}
         <Container>
           {children}
         </Container>

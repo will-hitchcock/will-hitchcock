@@ -9,7 +9,11 @@ const Index = () => (
       {
         contentfulProfile {
           header
-          blurb
+          blurb {
+            internal {
+              content
+            }
+          }
           socialLinks {
             icon
             url
@@ -26,13 +30,16 @@ const Index = () => (
           }
         }
       }
-
     `}
     render={(
       {
         contentfulProfile: {
           header,
-          blurb,
+          blurb: {
+            internal: {
+              content: blurb,
+            },
+          },
           socialLinks,
           heroImage: {
             file: {
